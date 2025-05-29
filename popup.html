@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompliQ - Accessibility Simulator</title>
+    <link rel="stylesheet" href="styles/popup.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <header>
+        <h1>CompliQ</h1>
+        <p class="subtitle">Accessibility Simulator</p>
+      </header>
+
+      <main>
+        <div class="simulation-group">
+          <h2>Simulations</h2>
+
+          <div class="simulation-option">
+            <div class="simulation-header">
+              <h3>Color Blindness</h3>
+              <label class="switch">
+                <input type="checkbox" id="colorBlindnessToggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="simulation-controls" id="colorBlindnessControls">
+              <select id="colorBlindnessType">
+                <option value="protanopia">Protanopia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia">Tritanopia</option>
+                <option value="achromatopsia">Achromatopsia</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="simulation-option">
+            <div class="simulation-header">
+              <h3>Keyboard Navigation</h3>
+              <label class="switch">
+                <input type="checkbox" id="keyboardNavigationToggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="simulation-option">
+            <div class="simulation-header">
+              <h3>Screen Reader Preview</h3>
+              <label class="switch">
+                <input type="checkbox" id="screenReaderToggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="simulation-option">
+            <div class="simulation-header">
+              <h3>Low Vision</h3>
+              <label class="switch">
+                <input type="checkbox" id="lowVisionToggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="score-section">
+          <h2>Accessibility Score</h2>
+          <div class="score-display">
+            <div class="score-circle" id="scoreCircle">
+              <span id="scoreValue">-</span>
+            </div>
+            <div class="score-details">
+              <p>
+                <span id="passedRules">0</span> of
+                <span id="totalRules">0</span> checks passed
+              </p>
+              <p class="score-hint" id="scoreHint">
+                Tests will run automatically when you open the extension
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="runTestsBtn" class="primary-btn">Run Tests</button>
+          <button id="resetBtn" class="secondary-btn">Reset All</button>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          CompliQ &copy; 2024 -
+          <a href="https://github.com/RgnDunes/CompliQ" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="scripts/popup.js" type="module"></script>
+  </body>
+</html>
