@@ -1,0 +1,37 @@
+/* Base styles for CompliQ extension overlays */
+.compliq-overlay {
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+/* Force focus styles for keyboard navigation simulation */
+.compliq-force-focus:focus {
+  outline: 3px solid #3182ce !important;
+  outline-offset: 2px !important;
+}
+
+/* Screen reader overlay */
+#compliq-screen-reader-overlay {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-size: 12px !important;
+}
+
+/* Low vision text styles */
+body.compliq-low-vision * {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+/* Focus indicators for keyboard navigation */
+.compliq-focus-highlight {
+  position: absolute;
+  border: 3px solid #3182ce !important;
+  background-color: rgba(49, 130, 206, 0.1) !important;
+  border-radius: 3px !important;
+  z-index: 2147483646 !important;
+  pointer-events: none !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3182ce !important;
+}
