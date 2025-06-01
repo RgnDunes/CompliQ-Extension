@@ -1,5 +1,7 @@
 # CompliQ - Accessibility Simulator Chrome Extension
 
+Live Link: https://chromewebstore.google.com/detail/compliq-accessibility-sim/gjimcjigkhkbnhdfcbbdchoelfffdakl
+
 A powerful Chrome extension that helps developers and designers visualize and test web accessibility issues in real-time.
 
 ## Features
